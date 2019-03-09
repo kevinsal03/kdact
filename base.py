@@ -33,7 +33,7 @@ def updateTime(): #update the current time
 def send(x):
     #x is message
     updateTime()
-    finalMSG = "[" + cTime + "] " + x
+    finalMSG = "\n[" + cTime + "] " + x
     server = smtplib.SMTP(smtp, port)
     server.starttls()
     server.login(user, passw)
