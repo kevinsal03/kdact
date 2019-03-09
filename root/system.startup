@@ -1,0 +1,13 @@
+#!/bin/sh
+# Startup
+
+cd /
+cd /home/pi/DACTfiles
+sudo python selftest.py
+sleep 5s
+sudo python system.py
+sleep 1s
+sudo python crash.py
+sleep 30s
+sudo shutdown -r
+cd /
